@@ -21,6 +21,7 @@ public class HoversPageTest {
     public void testHoverSecondAvatar() {
         hoversPage.hoverSecondUserAvatar();
         Assert.assertTrue(hoversPage.isSecondFigcaptionTextDisplayed());
+        Assert.assertEquals("name: user2\nView profile", hoversPage.getSecondFigcaptionText());
     }
 
     @After

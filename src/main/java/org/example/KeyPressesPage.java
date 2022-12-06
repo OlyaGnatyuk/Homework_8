@@ -1,6 +1,6 @@
 package org.example;
+
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -47,7 +47,7 @@ public class KeyPressesPage {
     }
 
     public void waitFinishTextShown() {
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("result")));
+        webDriverWait.until(ExpectedConditions.visibilityOf(resultMessage));
     }
 }
 

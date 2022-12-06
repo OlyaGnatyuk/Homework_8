@@ -40,6 +40,14 @@ public class HoversPage {
 
         return false;
     }
+
+    public String getSecondFigcaptionText() {
+        if (!userCaptions.isEmpty()) {
+            return userCaptions.get(1).getText();
+        }
+
+        return null;
+    }
 }
 
 

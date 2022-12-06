@@ -1,7 +1,6 @@
 package org.example;
 
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -43,7 +42,7 @@ public class DynamicLoadingPage {
     }
 
     public void waitFinishTextShown() {
-        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
+        webDriverWait.until(ExpectedConditions.visibilityOf(resultMessage));
     }
 }
 
